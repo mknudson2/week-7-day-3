@@ -1,8 +1,7 @@
 const form = document.querySelector('#sunday-form');
 const outputArea = document.querySelector('.outputArea');
-const itemsList = []; // Array to store the entered items
+const itemsList = []; 
 
-    // Function to update the list in the outputArea
 function updateList() {
     const ul = document.createElement('ul');
     itemsList.forEach(item => {
@@ -30,12 +29,11 @@ function updateList() {
             const index = itemsList.findIndex(listItem => listItem.task === item.task);
             if (index !== -1) {
                 itemsList.splice(index, 1);
-                updateList(); // Update the list after removal
+                updateList(); 
             }
         });
     });
 
-        // Clear the outputArea and append the updated list
         outputArea.innerHTML = '';
         outputArea.appendChild(ul);
     }
@@ -46,16 +44,15 @@ form.addEventListener('submit', (event) => {
     const userItem = userToDo.get('sunday-todo');
     const priority = userToDo.get('priority');
 
-    if (userItem.trim() !== '') { // Check if the input is not empty
+    if (userItem.trim() !== '') { 
         const todoItem = {
             task: userItem,
             priority: priority
         };
 
         itemsList.push(todoItem);
-        updateList(); // Update the list after addition
+        updateList(); 
 
-            // Clear the form input field for the next entry
         form.reset();
     }
 });
