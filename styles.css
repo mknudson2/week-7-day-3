@@ -1,0 +1,89 @@
+.body-style {
+    background-image: url(./wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+
+}
+
+.main-section {
+    display: grid;
+}
+
+.todo-container {
+    border: none;
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.426);
+    width: 600px;
+    height: 850px;
+    margin: -90px auto;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 8px black;
+
+}
+
+.input-form {
+    font-size: 22;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.outputArea {
+    border: none;
+    border-color: rgba(49, 174, 176, 0.156);
+    border-width: 1px;
+    /* background-color: rgba(109, 118, 118, 0.193); */
+    backdrop-filter: blur(8px);
+    border-width: 2px;
+    /* width: 490px; */
+    width: 540px;
+    height: 760px;
+    /* height: 730px; */
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box-header{
+    font-size: 45px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.spacing {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    font-size: 22px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.submit-btn:hover {
+    background-color: forestgreen;
+}
+
+.submit-btn:active {
+    background-color: rgb(27, 113, 27);
+}
+
+.field-style {
+    font-size: 22px;
+    width: 400px;
+    border-radius: 8px;
+
+}
+
+.priority {
+    margin-left: 128px;
+    margin-top: 10px;
+    font-size: 22px;
+    width: 150px;
+}

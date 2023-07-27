@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-style">
+    <h1 class="spacing">Weekly To-Dos</h1>
+    <section class="main-section">
+        <form action="" id="sunday-form" class="input-form"> 
+            <input type="submit" value="Add" class="spacing submit-btn">
+            <input type="text" name="sunday-todo" id="sunday-field" class="field-style">
+            <br>
+            <select name="priority" id="priority" class = "priority"> 
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </form>
+        <section class="todo-container">
+            <div class="flex-columns">
+                <h4 class="box-header">To-Do</h4>
+                <div class="outputArea"></div>
+                    <ul></ul>
+            </div>
+        </section>
+        <!-- <input type="submit" value> -->
+    </section>
+</body>
+</html>
